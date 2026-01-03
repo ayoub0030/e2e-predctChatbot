@@ -35,8 +35,8 @@ def predict_future_home_price(years_from_now: int) -> str:
 def create_agent(api_key: str):
     """Create and return the LangChain agent."""
     llm = ChatOpenAI(
-        model="gpt-3.5-turbo",
-        temperature=0,
+        model="gpt-4o-mini",
+        temperature=0.7,
         api_key=api_key
     )
     
